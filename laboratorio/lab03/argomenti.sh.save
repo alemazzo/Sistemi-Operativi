@@ -1,0 +1,17 @@
+#!/bin/bash
+
+NUM=$#;
+(( INDEX=2 ));
+while (( ${INDEX}<=NUM )); do
+	echo ${!INDEX};
+	(( INDEX=INDEX+2 ));
+done;
+
+(( INDEX=1 ));
+while (( ${INDEX}<=NUM )); do
+	echo ${!
+INDEX};
+	(( INDEX=INDEX+2 ));
+done;
+
+

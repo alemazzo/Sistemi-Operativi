@@ -1,0 +1,23 @@
+Scrivere uno script bash selezionarighe.sh che accetta due argomenti a riga di comando.
+Il primo argomento sarà il percorso, relativo o assoluto, per identificare univocamente un file
+esistente.
+Il secondo argomento sarà una stringa di testo. Se allo script viene passato un numero di
+argomenti diverso da 2, lo script deve mandare sullo standard error il messaggio "numero
+argomenti errato" e poi terminare restituendo come codice d'errore 1.
+Se allo script vengono passati esattamente 2 argomenti, lo script deve controllare se il file
+specificato dal primo argomento esiste. Se il file non esiste, lo script deve mandare sullo
+standard error il messaggio "argomento non file" e poi terminare restituendo come codice
+d'errore 2.
+Se invece quel file esiste, allora lo script deve far eseguire in background una sequenza di
+comandi, o di script, che:
+prima aspetta 2 secondi, e poi
+seleziona tutte le righe del file che contengono la parola passata come secondo argomento
+allo script, conta quelle righe e scrive il numero di tali righe aggiungendolo in una riga di
+testo in fondo al file OUTPUT.txt, nella directory in cui viene lanciato lo script.
+Nel frattempo lo script termina restituendo 0.
+Infine, scrivere uno script chiama.sh che esegue due volte lo script selezionarighe.sh,
+passandogli come argomento:
+la prima volta il percorso di un file che esiste
+ /usr/include/stdio.h e la parola int
+la seconda volta il percorso di un file che non esiste ./VICSCEMO.txt e la parola int
+La seconda chiamata serve a evidenziare se la gestione dell' errore funziona correttamente.

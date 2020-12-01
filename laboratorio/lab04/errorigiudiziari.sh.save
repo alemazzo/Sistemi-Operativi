@@ -1,0 +1,8 @@
+#!/bin/bash
+
+exec {DENUNCIE}<./denunce.txt
+exec {
+while read -u ${DENUNCE} A B C D; do
+	read -u
+	echo $A $B $C;
+done;

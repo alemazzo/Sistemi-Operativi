@@ -1,0 +1,4 @@
+AA BB 10 info
+CC DD 11 mate
+EE FF 12 gen
+GG HH 13 scie

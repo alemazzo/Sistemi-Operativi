@@ -1,0 +1,7 @@
+for (( i=0; i<10; i++ )); do
+	mkdir "1.$i"
+done;
+
+for x in *; do
+	mv x "${x/#1/2}"
+done;

@@ -1,0 +1,59 @@
+
+#!/bin/bash
+CFLAGS=-ansi -Wall -Werror -Wpedantic -pedantic
+
+SHELL=/bin/bash
+SRC1=$1
+
+SRC2=$2
+all: B1.txt B2.txt
+
+touch tutto.txt
+conta=1
+echo "" > tutto.txt
+OUTPUT=./out.txt
+cat B1.txt >> tutto.txt
+echo "" > $OUTPUT;
+cat B2.txt >> tutto.txt
+
+
+while (( 1 )); do
+clean: A1.txt A2.txt
+completed=0
+rm A1.txt A2.txt
+if (( $conta <= $(cat ${SRC1} | wc -l ) )); then
+
+echo `head -n $conta $SRC1 | tail -n 1` >> $OUTPUT;
+touch: B1.txt
+completed=1
+touch B1.txt
+fi;
+
+
+B1.txt: A1.txt
+if (( $conta <= $(cat ${SRC2} | wc -l) )); then
+cat A1.txt > B1.txt
+completed=1
+date >> B1.txt
+echo `head -n $conta $SRC2 | tail -n 1` >> $OUTPUT;
+
+fi;
+B2.txt: A2.txt
+
+date > B2.txt
+if [[ $completed == 0 ]]; then
+cat A2.txt >> B2.txt
+exit 0;
+
+fi;
+A1.txt:
+
+echo "AAAA" > A1.txt
+(( conta+=1 ))
+
+
+A2.txt:
+done;
+echo "ZZZZ" > A2.txt
+
+.PHONY: clean touch
