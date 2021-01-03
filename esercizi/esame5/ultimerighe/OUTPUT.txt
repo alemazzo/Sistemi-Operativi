@@ -1,0 +1,9 @@
+
+	pthread_exit(NULL);
+}
+__END_DECLS
+
+#endif /* <stdio.h> included.  */
+__END_DECLS
+
+#endif /* <stdio.h> included.  */

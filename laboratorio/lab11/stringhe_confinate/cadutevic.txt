@@ -1,0 +1,8 @@
+"1972"  "cesena"               "ribaltamento"                 "leva del freno  infilata  in  una  coscia"
+"1978"  "cesenatico"           "manubrio  strappato"          "fianco  grattugiato"
+"1979"  "cesena"               "pedale  rotto"                "botta  agli  zebedei"
+"1981"  "san piero"            "drittone  in  un campo"       "naso  rotto"
+"1982"  "monte  cavallo"       "freni  allentati"             "niente"
+"1983"  "monte  cavallo"       "freni  allentati"             "niente"
+"2007"  "ciola  araldi"        "ribaltamento"                 "incisivo  perso"
+"2010"  "monte  cavallo"       "ghiaccio"                     "niente"
